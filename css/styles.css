@@ -1184,6 +1184,16 @@ html[data-mode="nocturne"] .project:nth-child(3)::before {
     linear-gradient(90deg, transparent 52%, rgba(255, 93, 145, 0.12));
 }
 
+html[data-mode="nocturne"] .project:nth-child(4)::before {
+  background:
+    linear-gradient(0deg, transparent 70%, rgba(120, 230, 255, 0.1)),
+    radial-gradient(
+      circle at 20% 85%,
+      rgba(255, 93, 145, 0.14),
+      transparent 30%
+    );
+}
+
 html[data-mode="nocturne"] .project:hover::before,
 html[data-mode="nocturne"] .project:focus-within::before {
   opacity: 1;
@@ -1308,6 +1318,36 @@ html[data-mode="nocturne"] .mini-instrument {
   top: 68%;
   background: var(--ember);
   transform: skewY(-3deg);
+}
+
+.work-mini {
+  border-top: 1px dashed var(--line);
+}
+
+.work-mini i {
+  bottom: 0;
+  left: 0;
+  width: 22%;
+  height: var(--h, 40%);
+  border-top: 2px solid var(--signal);
+  background: linear-gradient(to top, rgba(var(--signal-rgb), 0.12), transparent);
+}
+
+.work-mini i:nth-child(1) {
+  --h: 38%;
+}
+
+.work-mini i:nth-child(2) {
+  left: 39%;
+  --h: 64%;
+  border-color: var(--ember);
+}
+
+.work-mini i:nth-child(3) {
+  left: 78%;
+  --h: 86%;
+  border-color: var(--fg);
+  opacity: 0.6;
 }
 
 html[data-mode="nocturne"] .method,
